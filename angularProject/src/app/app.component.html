@@ -1,0 +1,26 @@
+<!-- <p> Value of a: {{a}}</p>
+<p> Value of b: {{b}}</p>
+<p> Addition is: {{ans}}</p>
+
+<img [src]="imgSrc" alt = "">
+
+<button type="submit" (click) = "display('Welcome')"> Click Me! </button>
+<br/><br/>
+<input type="text" (keydown) = "isShift($event)"/>
+<br/><br/> -->
+<p> Two way binding example</p> 
+<input type="text" [(ngModel)] = "inputVal"/>
+<button type="submit" (click) = "show()"> Show Me! </button>
+<h1>{{dynamicVal}}</h1>
+
+<div class = "container">
+  <h1> Counter Example </h1>
+  <div class="btn-container">
+    <button (click) = "counter('decr')"> -- </button>
+    <p>{{count}}</p>
+    <button (click) = "counter('incr')"> ++ </button>
+  </div>
+</div>
+
+<button (click) = "showNgIf()"> Show NgIf </button>
+<div *ngIf = "displayElement"> Div element </div>
