@@ -29,3 +29,12 @@
   <li *ngFor = "let item of listItems"> {{item.name}} is {{item.age}} years old    
   </li>
 </ul>
+
+<div class="containerNgSwitch"> 
+  <label> Enter your age:</label>
+  <input type="text" (input)="checkEligibility()" [(ngModel)]="age"/>
+  <div [ngSwitch]="isEligible">
+    <p *ngSwitchCase="true"> You are eligible to vote </p>
+    <p *ngSwitchDefault> You are not eligible to vote </p>
+  </div>
+</div>

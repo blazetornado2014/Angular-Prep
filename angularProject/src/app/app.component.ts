@@ -60,4 +60,9 @@ export class AppComponent {
     age : 23 
   },
   ]
+  age = 0
+  isEligible:boolean = false;
+  checkEligibility(){
+    this.isEligible = this.age >= 18;
+  }
 }
