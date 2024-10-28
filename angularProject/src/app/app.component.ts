@@ -42,4 +42,22 @@ export class AppComponent {
   showNgIf(){
     this.displayElement = !this.displayElement;
   }
+
+  listItems = [{
+    name : 'Alex',
+    age : 23
+  },
+  {
+    name : 'Mike',
+    age : 24 
+  },
+  {
+    name : 'Paul',
+    age : 25 
+  },
+  {
+    name : 'Jack',
+    age : 23 
+  },
+  ]
 }

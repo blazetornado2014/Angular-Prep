@@ -24,3 +24,8 @@
 
 <button (click) = "showNgIf()"> Show NgIf </button>
 <div *ngIf = "displayElement"> Div element </div>
+
+<ul>
+  <li *ngFor = "let item of listItems"> {{item.name}} is {{item.age}} years old    
+  </li>
+</ul>
