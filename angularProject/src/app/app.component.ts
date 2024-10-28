@@ -65,4 +65,13 @@ export class AppComponent {
   checkEligibility(){
     this.isEligible = this.age >= 18;
   }
+  colorMode = 'lightMode';
+  toggleMode(){
+    if (this.colorMode == 'lightMode'){
+      this.colorMode = 'darkMode';
+    }else{
+      this.colorMode = 'lightMode';
+    }
+
+  }
 }
